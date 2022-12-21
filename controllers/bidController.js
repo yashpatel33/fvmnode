@@ -7,7 +7,7 @@ const bid_add = (req, res) => {
     const bid = new Bid(req.body);
     bid.save()
         .then(result => {
-            res.json({ status: 200,  msg: "Successfully palced a bid" });
+            res.json({ status: 200,  msg: "Successfully placed a bid" });
         })
         .catch(err => {
             res.json({ status: 400, msg: err.message })
